@@ -1,6 +1,6 @@
 let results = [];
 
-document.addEventListener('change', function() {
+function submit() {
   // 1: Dung, 2: Sai
   for (let i = 1; i <= 10; i++) {
     let selectedValue = document.querySelector(`input[name="Cau1.${i}"]:checked`);
@@ -35,8 +35,5 @@ document.addEventListener('change', function() {
       results[30 + i - 1] = textarea.value;
     }
   }
-});
-
-function submit() {
   console.log(results);
 }
